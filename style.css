@@ -1,27 +1,99 @@
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #1e00ff, #8a00ff);
-  color: #fff;
+    margin: 0;
+    background: #04000a;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
 }
-header {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
+
+/* TOP MENU */
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+.logo {
+    font-weight: bold;
+}
+.logo span {
+    color: #ff00ff;
+}
+
 nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: #00ffea;
-  font-weight: bold;
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
 }
+
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 60px 20px;
+    text-align: center;
+    padding: 120px 20px;
 }
-.foto {
-  width: 180px;
-  border-radius: 100px;
-  border: 3px solid #00ffea;
+
+.neon-pink { color: #ff00ff; text-shadow: 0 0 15px #ff00ff; }
+.neon-cyan { color: #00eaff; text-shadow: 0 0 15px #00eaff; }
+.neon-green { color: #00ff9d; text-shadow: 0 0 15px #00ff9d; }
+.neon-purple { color: #b300ff; text-shadow: 0 0 15px #b300ff; }
+
+.btn-glow {
+    background: #ff00ff;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #ff00ff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
+    gap: 20px;
+}
+
+.card {
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    font-size: 22px;
+}
+
+.neon-border-pink { border: 2px solid #ff00ff; box-shadow: 0 0 20px #ff00ff; }
+.neon-border-blue { border: 2px solid #00eaff; box-shadow: 0 0 20px #00eaff; }
+.neon-border-green { border: 2px solid #00ff9d; box-shadow: 0 0 20px #00ff9d; }
+.neon-border-purple { border: 2px solid #b300ff; box-shadow: 0 0 20px #b300ff; }
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.sub {
+    text-align: center;
+    font-size: 22px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #050014;
+    margin-top: 40px;
 }
